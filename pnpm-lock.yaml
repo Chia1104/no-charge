@@ -53,6 +53,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0
       react-native: 0.71.3
+      react-native-mmkv: ^2.6.3
       react-native-safe-area-context: 4.5.0
       react-native-screens: ~3.20.0
       superjson: 1.9.1
@@ -74,6 +75,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-native: 0.71.3_oo5no556diumlvgcr27pvljqai
+      react-native-mmkv: 2.6.3_yqouayos4dnow7nnkhah4yzuzq
       react-native-safe-area-context: 4.5.0_yqouayos4dnow7nnkhah4yzuzq
       react-native-screens: 3.20.0_yqouayos4dnow7nnkhah4yzuzq
       superjson: 1.9.1
@@ -8522,6 +8524,16 @@ packages:
 
   /react-native-gradle-plugin/0.71.15:
     resolution: {integrity: sha512-7S3pAuPaQJlhax6EZ4JMsDNpj05TfuzX9gPgWLrFfAIWIFLuJ6aDQYAZy2TEI9QJALPoWrj8LWaqP/DGYh14pw==}
+    dev: false
+
+  /react-native-mmkv/2.6.3_yqouayos4dnow7nnkhah4yzuzq:
+    resolution: {integrity: sha512-CkLAU5EX18eDw0Q+h6qEXPvynb+NVDu54cOY3h4h9VUhaaflfAmGWBJRQCBQz5M0VdnS8utjgJNryTAWKUTqpw==}
+    peerDependencies:
+      react: '*'
+      react-native: '>=0.71.0'
+    dependencies:
+      react: 18.2.0
+      react-native: 0.71.3_oo5no556diumlvgcr27pvljqai
     dev: false
 
   /react-native-safe-area-context/4.5.0_yqouayos4dnow7nnkhah4yzuzq:
