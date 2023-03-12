@@ -11,17 +11,22 @@ const RootLayout = () => {
   return (
     <TRPCProvider>
       <SafeAreaProvider>
-        {/*
-          The Stack component displays the current page.
-          It also allows you to configure your screens 
-        */}
         <Stack
           screenOptions={{
             headerStyle: {
               backgroundColor: "#f472b6",
             },
           }}
-        />
+        >
+          <Stack.Screen
+            name="modal"
+            options={{
+              // Set the presentation mode to modal for our modal route.
+              presentation: "modal",
+              headerShown: false,
+            }}
+          />
+        </Stack>
         <StatusBar />
       </SafeAreaProvider>
     </TRPCProvider>
