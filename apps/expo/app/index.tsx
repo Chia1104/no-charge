@@ -40,7 +40,6 @@ const Index = () => {
     <SafeAreaView className="bg-light">
       <Stack.Screen options={{ title: "Home" }} />
       <View className="h-full w-full p-4">
-        {postQuery.isLoading && <Text>Loading...</Text>}
         <FlashList
           data={postQuery.data}
           onRefresh={() => void postQuery.refetch()}

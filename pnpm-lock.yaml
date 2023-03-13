@@ -28,9 +28,10 @@ importers:
       lint-staged: 13.2.0
       prettier: 2.8.4
       prettier-plugin-tailwindcss: 0.2.4_2m34gfnsqvzqy5bj5eci3wt3by
-      shell-quote: 1.8.0
       turbo: 1.8.3
       typescript: 4.9.5
+    devDependencies:
+      shell-quote: 1.8.0
 
   apps/expo:
     specifiers:
@@ -9442,7 +9443,6 @@ packages:
 
   /shell-quote/1.8.0:
     resolution: {integrity: sha512-QHsz8GgQIGKlRi24yFc6a6lN69Idnx634w49ay6+jA5yFh7a1UY+4Rp6HPx/L/1zcEDPEij8cIsiqR6bQsE5VQ==}
-    dev: false
 
   /side-channel/1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
