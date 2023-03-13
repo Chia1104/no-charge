@@ -56,8 +56,8 @@ const Index = () => {
             />
           )}
         />
-        <View className="rounded-full bg-amber-100" >
-          <Link href="/modal" className="p-4" >
+        <View className="rounded-full bg-amber-100">
+          <Link href="/modal" className="p-4">
             Create
           </Link>
         </View>
