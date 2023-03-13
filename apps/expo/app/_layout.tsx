@@ -1,4 +1,3 @@
-import React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -14,12 +13,12 @@ const RootLayout = () => {
         <Stack
           screenOptions={{
             headerStyle: {
-              backgroundColor: "#f472b6",
+              backgroundColor: "#c9ada7",
             },
           }}
         >
           <Stack.Screen
-            name="modal"
+            name="create"
             options={{
               // Set the presentation mode to modal for our modal route.
               presentation: "modal",
