@@ -6,6 +6,12 @@
       "inputs": ["prisma/schema.prisma"],
       "cache": false
     },
+    "@chia/expo": {
+      "env": [
+        "ANDROID_CLIENT_ID",
+        "IOS_CLIENT_ID"
+      ]
+    },
     "db:push": {
       "inputs": ["prisma/schema.prisma"],
       "cache": false
@@ -43,6 +49,9 @@
     "VERCEL",
     "VERCEL_URL",
     "BASE_URL",
-    "ZEABUR_URL"
+    "ZEABUR_URL",
+    "HOST",
+    "PORT",
+    "NODE_ENV"
   ]
 }

@@ -1,3 +1,4 @@
+import * as process from "process";
 import type { ExpoConfig } from "@expo/config";
 
 const defineConfig = (): ExpoConfig => ({
@@ -31,6 +32,8 @@ const defineConfig = (): ExpoConfig => ({
     eas: {
       projectId: "your-project-id",
     },
+    androidClientId: process.env.ANDROID_CLIENT_ID,
+    iosClientId: process.env.IOS_CLIENT_ID,
   },
   plugins: ["./expo-plugins/with-modify-gradle.js"],
 });

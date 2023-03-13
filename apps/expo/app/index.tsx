@@ -40,6 +40,11 @@ const Index = () => {
     <SafeAreaView className="bg-light">
       <Stack.Screen options={{ title: "Home" }} />
       <View className="h-full w-full p-4">
+        <View className="rounded-full bg-primary">
+          <Link href="/oauth" className="p-4">
+            Login
+          </Link>
+        </View>
         <FlashList
           data={postQuery.data}
           onRefresh={() => void postQuery.refetch()}

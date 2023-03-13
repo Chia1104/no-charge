@@ -8,10 +8,13 @@ const config = {
     "prettier",
   ],
   rules: {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-var-requires": "off",
     "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       {
         argsIgnorePattern: "^_",
         varsIgnorePattern: "^_",
