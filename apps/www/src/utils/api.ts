@@ -1,8 +1,7 @@
+import type { AppRouter } from "@chia/api";
 import { httpBatchLink, loggerLink } from "@trpc/client";
 import { createTRPCNext } from "@trpc/next";
 import superjson from "superjson";
-
-import type { AppRouter } from "@chia/api";
 
 const getBaseUrl = () => {
   if (typeof window !== "undefined") return ""; // browser should use relative url
