@@ -7,12 +7,13 @@
  * The pieces you will need to use are documented accordingly near the end
  */
 
-import { getServerSession, type Session } from "@chia/auth";
-import { prisma } from "@chia/db";
 import { TRPCError, initTRPC } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import superjson from "superjson";
 import { ZodError } from "zod";
+
+import { getServerSession, type Session } from "@chia/auth";
+import { prisma } from "@chia/db";
 
 /**
  * 1. CONTEXT

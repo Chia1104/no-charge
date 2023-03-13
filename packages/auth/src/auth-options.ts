@@ -1,7 +1,8 @@
-import { prisma } from "@chia/db";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { type DefaultSession, type NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+
+import { prisma } from "@chia/db";
 
 /**
  * Module augmentation for `next-auth` types
