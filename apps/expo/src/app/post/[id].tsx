@@ -2,7 +2,7 @@ import { type FC } from "react";
 import { SafeAreaView, Text, View } from "react-native";
 import { SplashScreen, Stack, useSearchParams } from "expo-router";
 
-import { api } from "../../src/utils/api";
+import { api } from "../../utils/api";
 
 const Post: FC = () => {
   let { id } = useSearchParams();

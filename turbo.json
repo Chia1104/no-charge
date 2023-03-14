@@ -49,9 +49,6 @@
     "VERCEL",
     "VERCEL_URL",
     "BASE_URL",
-    "ZEABUR_URL",
-    "HOST",
-    "PORT",
-    "NODE_ENV"
+    "ZEABUR_URL"
   ]
 }
