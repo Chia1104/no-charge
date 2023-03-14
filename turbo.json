@@ -43,6 +43,7 @@
     "VERCEL",
     "VERCEL_URL",
     "BASE_URL",
-    "ZEABUR_URL"
+    "ZEABUR_URL",
+    "EXPO_ROUTER_APP_ROOT"
   ]
 }
