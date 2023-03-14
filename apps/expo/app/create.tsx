@@ -3,7 +3,7 @@ import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Stack, useRouter } from "expo-router";
 
-import { api } from "../utils/api";
+import { api } from "../src/utils/api";
 
 const Create: FC = () => {
   const utils = api.useContext();
