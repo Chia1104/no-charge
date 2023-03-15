@@ -1,5 +1,5 @@
 {
-  "name": "@chia/expo",
+  "name": "expo",
   "version": "0.1.0",
   "main": "index.tsx",
   "scripts": {
@@ -36,8 +36,8 @@
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
-    "@chia/api": "*",
-    "@chia/tailwind-config": "*",
+    "@nc/api": "*",
+    "@nc/tailwind-config": "*",
     "@expo/config-plugins": "^6.0.0",
     "@types/react": "^18.0.27",
     "@types/webpack-env": "^1.18.0",

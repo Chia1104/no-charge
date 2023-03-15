@@ -1,5 +1,5 @@
 {
-  "name": "@chia/www",
+  "name": "www",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@chia/api": "*",
-    "@chia/auth": "*",
-    "@chia/db": "*",
-    "@chia/tailwind-config": "*",
+    "@nc/api": "*",
+    "@nc/auth": "*",
+    "@nc/db": "*",
+    "@nc/tailwind-config": "*",
     "@tanstack/react-query": "^4.24.10",
     "@trpc/client": "^10.14.0",
     "@trpc/next": "^10.14.0",

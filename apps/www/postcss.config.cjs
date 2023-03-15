@@ -1,2 +1,2 @@
 // @ts-ignore
-module.exports = require("@chia/tailwind-config/postcss");
+module.exports = require("@nc/tailwind-config/postcss");

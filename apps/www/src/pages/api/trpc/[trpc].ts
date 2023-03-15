@@ -1,6 +1,6 @@
 import { createNextApiHandler } from "@trpc/server/adapters/next";
 
-import { appRouter, createTRPCContext } from "@chia/api";
+import { appRouter, createTRPCContext } from "@nc/api";
 
 // export API handler
 export default createNextApiHandler({
