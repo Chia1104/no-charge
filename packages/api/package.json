@@ -11,7 +11,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@nc/auth": "*",
+    "@clerk/nextjs": "^4.11.9",
     "@nc/db": "*",
     "@trpc/client": "^10.14.0",
     "@trpc/server": "^10.14.0",

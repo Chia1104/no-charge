@@ -12,8 +12,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.11.9",
     "@nc/api": "*",
-    "@nc/auth": "*",
     "@nc/db": "*",
     "@nc/tailwind-config": "*",
     "@tanstack/react-query": "^4.24.10",
@@ -22,13 +22,13 @@
     "@trpc/react-query": "^10.14.0",
     "@trpc/server": "^10.14.0",
     "next": "^13.2.3",
-    "next-auth": "^4.20.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.9.1",
     "zod": "^3.20.6"
   },
   "devDependencies": {
+    "@clerk/types": "^3.31.0",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",

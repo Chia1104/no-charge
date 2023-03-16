@@ -7,12 +7,13 @@
  * The pieces you will need to use are documented accordingly near the end
  */
 
+import type { User } from "@clerk/nextjs/api";
+import { clerkClient, getAuth } from "@clerk/nextjs/server";
 import { TRPCError, initTRPC } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import superjson from "superjson";
 import { ZodError } from "zod";
 
-import { getServerSession, type Session } from "@nc/auth";
 import { prisma } from "@nc/db";
 
 /**
@@ -25,7 +26,7 @@ import { prisma } from "@nc/db";
  *
  */
 type CreateContextOptions = {
-  session: Session | null;
+  user: User | null;
 };
 
 /**
@@ -39,7 +40,7 @@ type CreateContextOptions = {
  */
 const createInnerTRPCContext = (opts: CreateContextOptions) => {
   return {
-    session: opts.session,
+    user: opts.user,
     prisma,
   };
 };
@@ -49,15 +50,17 @@ const createInnerTRPCContext = (opts: CreateContextOptions) => {
  * process every request that goes through your tRPC endpoint
  * @link https://trpc.io/docs/context
  */
-export const createTRPCContext = async (opts: CreateNextContextOptions) => {
-  const { req, res } = opts;
+export const createTRPCContext = async ({ req }: CreateNextContextOptions) => {
+  async function getUser() {
+    // get userId from request
+    const { userId } = getAuth(req);
+    // get full user object
+    return userId ? await clerkClient.users.getUser(userId) : null;
+  }
 
-  // Get the session from the server using the unstable_getServerSession wrapper function
-  const session = await getServerSession({ req, res });
+  const user = await getUser();
 
-  return createInnerTRPCContext({
-    session,
-  });
+  return createInnerTRPCContext({ user });
 };
 
 /**
@@ -107,13 +110,12 @@ export const publicProcedure = t.procedure;
  * procedure
  */
 const enforceUserIsAuthed = t.middleware(({ ctx, next }) => {
-  if (!ctx.session?.user) {
+  if (!ctx.user) {
     throw new TRPCError({ code: "UNAUTHORIZED" });
   }
   return next({
     ctx: {
-      // infers the `session` as non-nullable
-      session: { ...ctx.session, user: ctx.session.user },
+      user: ctx.user,
     },
   });
 });
