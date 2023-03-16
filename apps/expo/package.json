@@ -12,6 +12,7 @@
     "FIXME(no-work):type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@clerk/clerk-expo": "^0.12.16",
     "@shopify/flash-list": "1.4.0",
     "@tanstack/react-query": "^4.24.10",
     "@trpc/client": "^10.14.0",
@@ -21,6 +22,7 @@
     "expo-constants": "~14.2.1",
     "expo-linking": "~4.0.1",
     "expo-router": "^1.0.1",
+    "expo-secure-store": "^12.1.1",
     "expo-splash-screen": "~0.18.1",
     "expo-status-bar": "~1.4.4",
     "nativewind": "^2.0.11",
@@ -36,9 +38,10 @@
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
+    "@clerk/types": "^3.31.0",
+    "@expo/config-plugins": "^6.0.0",
     "@nc/api": "*",
     "@nc/tailwind-config": "*",
-    "@expo/config-plugins": "^6.0.0",
     "@types/react": "^18.0.27",
     "@types/webpack-env": "^1.18.0",
     "eslint": "^8.34.0",
