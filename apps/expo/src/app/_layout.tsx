@@ -16,16 +16,7 @@ const RootLayout = () => {
                 backgroundColor: "#c9ada7",
               },
             }}
-          >
-            <Stack.Screen
-              name="create"
-              options={{
-                // Set the presentation mode to modal for our modal route.
-                presentation: "modal",
-                headerShown: false,
-              }}
-            />
-          </Stack>
+          />
         </AuthProvider>
         <StatusBar />
       </SafeAreaProvider>
