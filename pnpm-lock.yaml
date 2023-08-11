@@ -13,7 +13,7 @@ importers:
       husky: ^8.0.3
       lint-staged: ^13.2.0
       prettier: ^2.8.4
-      prettier-plugin-tailwindcss: ^0.2.4
+      prettier-plugin-tailwindcss: ^0.5.0
       shell-quote: ^1.8.0
       turbo: ^1.8.3
       typescript: ^4.9.5
@@ -27,7 +27,7 @@ importers:
       husky: 8.0.3
       lint-staged: 13.2.0
       prettier: 2.8.4
-      prettier-plugin-tailwindcss: 0.2.4_2m34gfnsqvzqy5bj5eci3wt3by
+      prettier-plugin-tailwindcss: 0.5.1_2m34gfnsqvzqy5bj5eci3wt3by
       shell-quote: 1.8.0
       turbo: 1.8.3
       typescript: 4.9.5
@@ -8549,21 +8549,21 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /prettier-plugin-tailwindcss/0.2.4_2m34gfnsqvzqy5bj5eci3wt3by:
-    resolution: {integrity: sha512-wMyugRI2yD8gqmMpZSS8kTA0gGeKozX/R+w8iWE+yiCZL09zY0SvfiHfHabNhjGhzxlQ2S2VuTxPE3T72vppCQ==}
-    engines: {node: '>=12.17.0'}
+  /prettier-plugin-tailwindcss/0.5.1_2m34gfnsqvzqy5bj5eci3wt3by:
+    resolution: {integrity: sha512-dvJRVoYlzTXa7mD1DooUl0m+7XXMiaClTgZATah27x0vqWAnmoTdndGdpRZDUXl9chk1FFiaQ0ncquUOKBhMoQ==}
+    engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
-      '@prettier/plugin-php': '*'
       '@prettier/plugin-pug': '*'
       '@shopify/prettier-plugin-liquid': '*'
       '@shufo/prettier-plugin-blade': '*'
       '@trivago/prettier-plugin-sort-imports': '*'
-      prettier: '>=2.2.0'
+      prettier: ^3.0
       prettier-plugin-astro: '*'
       prettier-plugin-css-order: '*'
       prettier-plugin-import-sort: '*'
       prettier-plugin-jsdoc: '*'
+      prettier-plugin-marko: '*'
       prettier-plugin-organize-attributes: '*'
       prettier-plugin-organize-imports: '*'
       prettier-plugin-style-order: '*'
@@ -8571,8 +8571,6 @@ packages:
       prettier-plugin-twig-melody: '*'
     peerDependenciesMeta:
       '@ianvs/prettier-plugin-sort-imports':
-        optional: true
-      '@prettier/plugin-php':
         optional: true
       '@prettier/plugin-pug':
         optional: true
@@ -8589,6 +8587,8 @@ packages:
       prettier-plugin-import-sort:
         optional: true
       prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-marko:
         optional: true
       prettier-plugin-organize-attributes:
         optional: true
