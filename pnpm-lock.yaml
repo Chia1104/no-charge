@@ -63,7 +63,7 @@ importers:
       react-native-mmkv: ^2.6.3
       react-native-safe-area-context: 4.5.0
       react-native-screens: ~3.20.0
-      superjson: 1.9.1
+      superjson: 1.13.3
       tailwindcss: ^3.2.7
       typescript: ^4.9.5
     dependencies:
@@ -85,7 +85,7 @@ importers:
       react-native-mmkv: 2.6.3_yqouayos4dnow7nnkhah4yzuzq
       react-native-safe-area-context: 4.5.0_yqouayos4dnow7nnkhah4yzuzq
       react-native-screens: 3.20.0_yqouayos4dnow7nnkhah4yzuzq
-      superjson: 1.9.1
+      superjson: 1.13.3
     devDependencies:
       '@babel/core': 7.21.0
       '@babel/preset-env': 7.20.2_@babel+core@7.21.0
@@ -123,7 +123,7 @@ importers:
       postcss: ^8.4.21
       react: 18.2.0
       react-dom: 18.2.0
-      superjson: 1.9.1
+      superjson: 1.13.3
       tailwindcss: ^3.2.7
       tsx: ^3.12.3
       typescript: ^4.9.5
@@ -142,7 +142,7 @@ importers:
       next-auth: 4.20.1_ld2jel3hspngo3u5lti2kgl2sq
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      superjson: 1.9.1
+      superjson: 1.13.3
       zod: 3.21.4
     devDependencies:
       '@types/node': 18.15.0
@@ -164,7 +164,7 @@ importers:
       '@trpc/server': ^10.14.0
       eslint: ^8.34.0
       eslint-config-base: 0.0.0
-      superjson: 1.9.1
+      superjson: 1.13.3
       typescript: ^4.9.5
       zod: ^3.20.6
     dependencies:
@@ -172,7 +172,7 @@ importers:
       '@chia/db': link:../db
       '@trpc/client': 10.15.0_@trpc+server@10.15.0
       '@trpc/server': 10.15.0
-      superjson: 1.9.1
+      superjson: 1.13.3
       zod: 3.21.4
     devDependencies:
       eslint: 8.36.0
@@ -9854,8 +9854,8 @@ packages:
     resolution: {integrity: sha512-Mu7R0g4ig9TUuGSxJavny5Rv0egCEtpZRNMrZaYS1vxkiIxGiGUwoezU3LazIQ+KE04hTrTfNPgxU5gzi7F5Pw==}
     dev: false
 
-  /superjson/1.9.1:
-    resolution: {integrity: sha512-oT3HA2nPKlU1+5taFgz/HDy+GEaY+CWEbLzaRJVD4gZ7zMVVC4GDNFdgvAZt6/VuIk6D2R7RtPAiCHwmdzlMmg==}
+  /superjson/1.13.3:
+    resolution: {integrity: sha512-mJiVjfd2vokfDxsQPOwJ/PtanO87LhpYY88ubI5dUB1Ab58Txbyje3+jpm+/83R/fevaq/107NNhtYBLuoTrFg==}
     engines: {node: '>=10'}
     dependencies:
       copy-anything: 3.0.3
